@@ -23,7 +23,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.michelzin21.bovcontrolchallenge"
     },
     "web": {
       "favicon": "./assets/favicon.png"
