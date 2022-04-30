@@ -12,10 +12,10 @@ export default function Checklist({ data }) {
     <Container>
     	<TouchableOpacity onPress={() => navigation.navigate('Detail', { checklist: data })}>
     		<RowContent>
-	    		<Name>{ data.from.name }</Name>
+	    		<Name>{ data.from }</Name>
 				<AntDesign name="arrowright" size={24} color="black" />
 	    	</RowContent>
-	    	<Farm>{`${data.farmer.name} - ${data.farmer.city}`}</Farm>
+	    	<Farm>{`${data.farmerName} - ${data.farmerCity}`}</Farm>
 	    	<DatesTitle>Criado em:</DatesTitle>
 	    	<Dates>{data.created_at}</Dates>
     	</TouchableOpacity>

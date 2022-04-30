@@ -19,13 +19,19 @@ export default function Router() {
 			<Stack.Navigator 
 				initialRouteName="Home"
 				screenOptions={{
-			        headerShown: false
+			        headerStyle: {
+						backgroundColor: '#46a0cd',
+					},
+					headerTintColor: 'black',
+					headerTitleStyle: {
+						fontWeight: 'bold',
+					},
 			    }}
 			>
 				<Stack.Screen 
 					name="Home" 
 					component={Home} 
-					options={{ title: "Meus Checklists"}}
+					options={{ title: "Meus Checklists", headerShown: false}}
 				/>
 				<Stack.Screen 
 					name="Detail" 

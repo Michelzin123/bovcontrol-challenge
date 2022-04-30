@@ -36,11 +36,11 @@ export default function Detail({ route }) {
     	<Title>Detalhes do checklist</Title>
 
     	<FarmerName>
-			{ checklist.from.name }
+			{ checklist.from }
 		</FarmerName>
 
 		<FarmName>
-			{`${checklist.farmer.name} - ${checklist.farmer.city}`}
+			{`${checklist.farmerName} - ${checklist.farmerCity}`}
 		</FarmName>
 
     	<NumbersSection>
@@ -67,7 +67,7 @@ export default function Detail({ route }) {
     		
 			<LineText>Nome do supervisor: </LineText>
 			<Item>
-		 		{checklist.had_supervision == true ? checklist.to.name : "Não aplicável"}
+		 		{checklist.had_supervision == true ? checklist.to : "Não aplicável"}
 			</Item>
 
 			<LineText>Criado em: </LineText>
@@ -80,7 +80,7 @@ export default function Detail({ route }) {
 		 		{ checklist.updated_at }
 			</Dates>
 
-			<EditButton onPress={() => navigation.navigate('Update')}>
+			<EditButton onPress={() => navigation.navigate('Update', { checklist: checklist })}>
 	    		<ButtonTitle> Editar </ButtonTitle>
 	    		<AntDesign name="edit" size={24} color="black" />
 	    	</EditButton>

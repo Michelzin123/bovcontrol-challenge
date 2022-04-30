@@ -1,8 +1,8 @@
 import Realm from 'realm';
-import ChecklistSchema from '../schemas/ChecklistSchema';
+import ChecklistsSchema from '../schemas/ChecklistsSchema';
 
 export default function getRealm() {
 	return Realm.open({
-		schema: [ ChecklistSchema ],
+		schema: [ ChecklistsSchema ],
 	});
 }

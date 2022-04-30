@@ -11,7 +11,7 @@ export const Container = styled.View`
 //${Platform.OS === 'ios' ? 50 : StatusBar.currentHeight}px
 export const ScrollContainer = styled.ScrollView`
 	flex: 1;
-	padding-top: 50px;
+	padding-top: 20px;
 	background: #FFF
 `;
 
@@ -36,6 +36,12 @@ export const Input = styled.TextInput.attrs({
 	font-size: 16px;
 	color: #333;
 	background: #FFF;
+
+	margin: 10px 20px;
+
+	border: 2px;
+	border-radius: 8px;
+	border-color: #e3e3e3;
 `;
 //background: #04db77;
 export const NewButton = styled.TouchableOpacity`
@@ -140,10 +146,18 @@ export const EditButton = styled.TouchableOpacity`
 	background: #46a0cd;
 	border-radius: 4px;
 	margin-top: 20px
-	margin-bottom: 10px;
+	margin-bottom: 40px;
 	margin-right: 30px;
 	margin-left: 30px;
 	padding: 5px 5px;
 	justify-content: center;
 	flex-direction: row;
+`;
+
+export const FormRow = styled.View`
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 30px;
+	margin-right: 30px;
 `;
