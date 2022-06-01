@@ -28,8 +28,7 @@ export default function Home({navigation}) {
                 'Content-Type': 'application/json',
             },
                 body: JSON.stringify({
-                  nome: 'José',
-                  idade: 28
+                  data
                 })
         })
     }
